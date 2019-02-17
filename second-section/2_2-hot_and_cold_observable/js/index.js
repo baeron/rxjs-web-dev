@@ -1,0 +1,1 @@
+// https://stackoverflow.com/questions/50371887/rxjs-6-get-connectableobservable-from-observable
