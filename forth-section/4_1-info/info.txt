@@ -1,0 +1,2 @@
+Higher Order Observables
+https://aalexeev239.github.io/rxjs-hoo/#4
