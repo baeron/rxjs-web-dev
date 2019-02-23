@@ -1,0 +1,9 @@
+<div class="card wrapper">
+  <div class="card-header">
+    <h3>MergeScan Example</h3>
+  </div>
+  <div class="card-body">
+    <span *ngFor="let item of items">{{ item }}</span>
+    <button #moreButton class="btn btn-primary" [class.disabled]="disableMoreButton">More...</button>
+  </div>
+</div>
