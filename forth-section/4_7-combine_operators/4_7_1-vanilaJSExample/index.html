@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h3>zip - combineLatest - withLatestFrom example</h3>
+        </div>
+        <div class="card-body main">
+          <div class="card cities">
+            <div class="card-body">
+              <div class="card-text"><h3>Cities</h3></div>
+              <div class="btn-group btn-group-lg cities" role="group"></div>
+            </div>
+          </div>
+
+          <div class="card coefficients">
+            <div class="card-body">
+              <div class="card-text"><h3>Coefficients</h3></div>
+              <div
+                class="btn-group btn-group-lg coefficients"
+                role="group"
+              ></div>
+            </div>
+          </div>
+
+          <br />
+          <div class="card price">
+            <div class="card-body">
+              <div class="card-text"><h3>Calculated price</h3></div>
+              <div class="value">0</div>
+              <button
+                class="btn btn-info sms"
+                title="Send price and coefficient"
+              >
+                Send with SMS
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-body loading" style="text-align: center;">
+          Loading...
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.2.1/rxjs.umd.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="fn_zip.js"></script>
+  </body>
+</html>
