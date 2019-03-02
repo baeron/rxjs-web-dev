@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css"
+    />
+    <style>
+      h3 {
+        display: inline-block;
+      }
+
+      .wrapper {
+        width: 90%;
+      }
+
+      .card-header h3 {
+        display: inline;
+      }
+
+      button {
+        float: right;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card wrapper">
+        <div class="card-header">
+          <h3>forkJoin Example</h3>
+          <button class="btn btn-danger" onclick="deleteAllClick()">
+            Delete All
+          </button>
+        </div>
+        <div class="card-body list">
+          <ul class="list-group">
+            <li class="list-group-item" id="item1">
+              item1
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="deleteClick(1)"
+              >
+                Delete
+              </button>
+            </li>
+            <li class="list-group-item" id="item2">
+              item2
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="deleteClick(2)"
+              >
+                Delete
+              </button>
+            </li>
+            <li class="list-group-item" id="item3">
+              item3
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="deleteClick(3)"
+              >
+                Delete
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.2.1/rxjs.umd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="fn_fork_join.js"></script>
+  </body>
+</html>
